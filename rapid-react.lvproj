@@ -750,6 +750,9 @@ AddOutputFilter chunkFilter
 			<Item Name="cdex - update quadcopter 3D model.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/Control and Simulation/Case Studies/Aerospace/Quadcopter/subVIs/cdex - update quadcopter 3D model.vi"/>
 			<Item Name="rvc Create Grid.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Reference/LabVIEW Corke Toolkit/Functions/Position and Orientation/subVIs/rvc Create Grid.vi"/>
 			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
+			<Item Name="Substitution Degrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/swerve/src/Substitution Degrees.vi"/>
+			<Item Name="scaleFactor.vi" Type="VI" URL="../Support Code/submodules/swerve/src/swerve/src/scaleFactor.vi"/>
+			<Item Name="TicksToDegrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/swerve/src/TicksToDegrees.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

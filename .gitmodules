@@ -1,6 +1,6 @@
 [submodule "Support Code/submodules/swerve"]
 	path = Support Code/submodules/swerve
-	url = https://eisd-robotics.eanesisd.net/cflew/swerve
+	url = https://eisd-robotics.eanesisd.net/2468/swerve
 	branch = dev
 [submodule "Support Code/submodules/bordeaux-pathinator"]
 	path = Support Code/submodules/bordeaux-pathinator

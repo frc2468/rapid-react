@@ -755,6 +755,7 @@ AddOutputFilter chunkFilter
 				<Item Name="CTRE_PigeonIMU_GetFusedHeading.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Pigeon IMU/CTRE_PigeonIMU_GetFusedHeading.vi"/>
 				<Item Name="CTRE_PigeonIMU_GetYPR.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Pigeon IMU/CTRE_PigeonIMU_GetYPR.vi"/>
 				<Item Name="CTRE_PigeonIMU_GetData.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Pigeon IMU/CTRE_PigeonIMU_GetData.vi"/>
+				<Item Name="roboRIO_FPGA_2022_22.2.0.lvbitx" Type="Document" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/roboRIO_FPGA_2022_22.2.0.lvbitx"/>
 				<Item Name="CTRE_Phoenix_CANcoder_Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/CANCoder/CTRE_Phoenix_CANcoder_Open.vi"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
@@ -778,6 +779,13 @@ AddOutputFilter chunkFilter
 			<Item Name="cdex - update quadcopter 3D model.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/Control and Simulation/Case Studies/Aerospace/Quadcopter/subVIs/cdex - update quadcopter 3D model.vi"/>
 			<Item Name="rvc Create Grid.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Reference/LabVIEW Corke Toolkit/Functions/Position and Orientation/subVIs/rvc Create Grid.vi"/>
 			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
+			<Item Name="angleWrapper.vi" Type="VI" URL="../Support Code/submodules/swerve/src/angleWrapper.vi"/>
+			<Item Name="openCANCoders.vi" Type="VI" URL="../Support Code/submodules/swerve/src/openCANCoders.vi"/>
+			<Item Name="scaleFactor.vi" Type="VI" URL="../Support Code/submodules/swerve/src/scaleFactor.vi"/>
+			<Item Name="TicksToDegrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/TicksToDegrees.vi"/>
+			<Item Name="ToFieldCentric.vi" Type="VI" URL="../Support Code/submodules/swerve/src/ToFieldCentric.vi"/>
+			<Item Name="VelocityConversion.vi" Type="VI" URL="../Support Code/submodules/swerve/src/VelocityConversion.vi"/>
+			<Item Name="PolarToRect.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Field Centric Test/PolarToRect.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

@@ -756,6 +756,8 @@ AddOutputFilter chunkFilter
 				<Item Name="CTRE_PigeonIMU_GetYPR.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Pigeon IMU/CTRE_PigeonIMU_GetYPR.vi"/>
 				<Item Name="CTRE_PigeonIMU_GetData.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Pigeon IMU/CTRE_PigeonIMU_GetData.vi"/>
 				<Item Name="CTRE_Phoenix_CANcoder_Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/CANCoder/CTRE_Phoenix_CANcoder_Open.vi"/>
+				<Item Name="roboRIO_FPGA_2022_22.2.0.lvbitx" Type="Document" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/roboRIO_FPGA_2022_22.2.0.lvbitx"/>
+				<Item Name="LVMouseTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMouseTypeDef.ctl"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -777,9 +779,9 @@ AddOutputFilter chunkFilter
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="cdex - update quadcopter 3D model.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/Control and Simulation/Case Studies/Aerospace/Quadcopter/subVIs/cdex - update quadcopter 3D model.vi"/>
 			<Item Name="rvc Create Grid.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Reference/LabVIEW Corke Toolkit/Functions/Position and Orientation/subVIs/rvc Create Grid.vi"/>
-			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
 			<Item Name="scaleFactor.vi" Type="VI" URL="../Support Code/submodules/swerve/src/scaleFactor.vi"/>
 			<Item Name="TicksToDegrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/TicksToDegrees.vi"/>
+			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
 			<Item Name="ToFieldCentric.vi" Type="VI" URL="../Support Code/submodules/swerve/src/ToFieldCentric.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">

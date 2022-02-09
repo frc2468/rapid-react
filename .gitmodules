@@ -5,4 +5,4 @@
 [submodule "Support Code/submodules/bordeaux-pathinator"]
 	path = Support Code/submodules/bordeaux-pathinator
 	url = https://eisd-robotics.eanesisd.net/2468/bordeaux-pathinator
-	branch = master
+	branch = dev

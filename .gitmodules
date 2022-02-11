@@ -1,8 +1,12 @@
-[submodule "Support Code/submodules/swerve"]
+[submodule "swerve"]
 	path = Support Code/submodules/swerve
 	url = https://eisd-robotics.eanesisd.net/2468/swerve
 	branch = dev
-[submodule "Support Code/submodules/bordeaux-pathinator"]
+[submodule "bordeaux"]
 	path = Support Code/submodules/bordeaux-pathinator
 	url = https://eisd-robotics.eanesisd.net/2468/bordeaux-pathinator
+	branch = dev
+[submodule "numlock"]
+	path = Support Code/submodules/numlock
+	url = https://eisd-robotics.eanesisd.net/cflew/numlock
 	branch = dev

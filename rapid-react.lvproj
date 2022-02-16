@@ -409,7 +409,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Load &amp; Unload.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Load_Unload/Load &amp; Unload.lvclass"/>
 				<Item Name="Get Image Subset.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Get Image Subset.vi"/>
 				<Item Name="Coerce Bad Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Coerce Bad Rect.vi"/>
-				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/Numeric/LVNumericRepresentation.ctl"/>
+				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 				<Item Name="IMAQ ColorImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ColorImageToArray"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
@@ -489,10 +489,6 @@ AddOutputFilter chunkFilter
 				<Item Name="NIMS_Error From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Error From Error Code.vi"/>
 				<Item Name="NIMS_ArithmeticOperator_multmx(M,CV).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(M,CV).vi"/>
 				<Item Name="Create Error.vi" Type="VI" URL="/&lt;vilib&gt;/imathl/engines/lvmath/Functions/Error Handling/Create Error.vi"/>
-				<Item Name="UID Generator.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/WorkSpace/UID Generator.vi"/>
-				<Item Name="Clear UID.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/SymbolTable/Clear UID.vi"/>
-				<Item Name="NIMS_RunTimeType_From StrictType (excl LVString).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RunTimeType/NIMS_RunTimeType_From StrictType (excl LVString).vi"/>
-				<Item Name="MC_LocalVariableDefStatement_Display.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/LocalVariableDefStatement/MC_LocalVariableDefStatement_Display.vi"/>
 				<Item Name="NILVSim.dll" Type="Document" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim.dll"/>
 				<Item Name="SIM limit type.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM limit type.ctl"/>
 				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
@@ -796,11 +792,15 @@ AddOutputFilter chunkFilter
 				<Item Name="SIM circular buffer create.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Circular Buffer.llb/SIM circular buffer create.vi"/>
 				<Item Name="SIM circular buffer ordered array.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Circular Buffer.llb/SIM circular buffer ordered array.vi"/>
 				<Item Name="SIM Collector (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/NILVSim Collector.llb/SIM Collector (scalar).vi"/>
-				<Item Name="SIM Is Init or Final Stage.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Is Init or Final Stage.vi"/>
 				<Item Name="NILVSim Collector core (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/NILVSim Collector.llb/NILVSim Collector core (scalar).vi"/>
 				<Item Name="SIM Sine Wave (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/DataSources/Implementation/NILVSim Sine Wave.llb/SIM Sine Wave (scalar).vi"/>
 				<Item Name="SIM Ramp (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/DataSources/Implementation/NILVSim Ramp.llb/SIM Ramp (scalar).vi"/>
 				<Item Name="SIM Gain (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/SignalArithmetic/Implementation/NILVSim Gain.llb/SIM Gain (vector).vi"/>
+				<Item Name="SIM Is Init or Final Stage.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Is Init or Final Stage.vi"/>
+				<Item Name="UID Generator.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/WorkSpace/UID Generator.vi"/>
+				<Item Name="Clear UID.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/SymbolTable/Clear UID.vi"/>
+				<Item Name="NIMS_RunTimeType_From StrictType (excl LVString).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RunTimeType/NIMS_RunTimeType_From StrictType (excl LVString).vi"/>
+				<Item Name="MC_LocalVariableDefStatement_Display.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/LocalVariableDefStatement/MC_LocalVariableDefStatement_Display.vi"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -891,7 +891,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{644948F5-5E9F-497B-927E-A9EAF1ED4434}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin/Paths</Property>
-				<Property Name="Bld_version.build" Type="Int">23</Property>
+				<Property Name="Bld_version.build" Type="Int">36</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/Paths</Property>

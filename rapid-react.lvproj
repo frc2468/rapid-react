@@ -884,7 +884,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Spark MAX Status 1 Frame.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/Typedef/Spark MAX Status 1 Frame.ctl"/>
 				<Item Name="Spark MAX Get Status 1.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Private/Spark MAX Get Status 1.vi"/>
 				<Item Name="Spark MAX Get Sensor Velocity.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/Spark MAX Get Sensor Velocity.vi"/>
-				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -913,6 +912,19 @@ AddOutputFilter chunkFilter
 			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
 			<Item Name="cdex - update quadcopter 3D model.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/Control and Simulation/Case Studies/Aerospace/Quadcopter/subVIs/cdex - update quadcopter 3D model.vi"/>
 			<Item Name="rvc Create Grid.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Reference/LabVIEW Corke Toolkit/Functions/Position and Orientation/subVIs/rvc Create Grid.vi"/>
+			<Item Name="Climb Teleop.vi" Type="VI" URL="../../test-project/Support Code/Teleop/Climb Teleop.vi"/>
+			<Item Name="Climb Immediate.vit" Type="VI" URL="../../test-project/Climb/Commands/Climb Immediate.vit"/>
+			<Item Name="Climb Operations.ctl" Type="VI" URL="../../test-project/Climb/Implementation/Climb Operations.ctl"/>
+			<Item Name="Climb Setpoints.ctl" Type="VI" URL="../../test-project/Climb/Implementation/Climb Setpoints.ctl"/>
+			<Item Name="Climb Command Helper.vi" Type="VI" URL="../../test-project/Climb/Implementation/Infrastructure/Climb Command Helper.vi"/>
+			<Item Name="Climb Published Globals.vi" Type="VI" URL="../../test-project/Climb/Implementation/Climb Published Globals.vi"/>
+			<Item Name="Shooter Operations.ctl" Type="VI" URL="../../test-project/Shooter/Implementation/Shooter Operations.ctl"/>
+			<Item Name="Shooter Setpoints.ctl" Type="VI" URL="../../test-project/Shooter/Implementation/Shooter Setpoints.ctl"/>
+			<Item Name="Shooter Published Globals.vi" Type="VI" URL="../../test-project/Shooter/Implementation/Shooter Published Globals.vi"/>
+			<Item Name="Shooter Command Helper.vi" Type="VI" URL="../../test-project/Shooter/Implementation/Infrastructure/Shooter Command Helper.vi"/>
+			<Item Name="Shooter Immediate.vit" Type="VI" URL="../../test-project/Shooter/Commands/Shooter Immediate.vit"/>
+			<Item Name="Template for Shooter Immediate.vit" Type="VI" URL="../../test-project/Shooter/Commands/Template for Shooter Immediate.vit"/>
+			<Item Name="Shooter Teleop.vi" Type="VI" URL="../../test-project/Support Code/Teleop/Shooter Teleop.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

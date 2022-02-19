@@ -13,7 +13,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Local" Type="Folder" URL="../Local">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Initialize Joystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Initialize Joystick.vi"/>
+				<Item Name="errorList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/errorList.vi"/>
+				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
+				<Item Name="joystickAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/joystickAcquire.vi"/>
+				<Item Name="keyboardAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/keyboardAcquire.vi"/>
+				<Item Name="mouseAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/mouseAcquire.vi"/>
+			</Item>
+			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
@@ -359,87 +372,13 @@ AddOutputFilter chunkFilter
 				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
 				<Item Name="Camera Delay Values.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/Camera Delay Values.vi"/>
 				<Item Name="WPI_CameraMyConfigure.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraMyConfigure.vi"/>
-				<Item Name="Unflatten Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pixmap.llb/Unflatten Pixmap.vi"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
-				<Item Name="IMAQ ArrayToColorImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToColorImage"/>
-				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
 				<Item Name="WPI_UtilitiesFRC SendMessageToConsole.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC SendMessageToConsole.vi"/>
 				<Item Name="NetComm_SendMessage.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_SendMessage.vi"/>
-				<Item Name="Empty Picture" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Empty Picture"/>
-				<Item Name="Draw Circle by Radius.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Draw Circle by Radius.vi"/>
-				<Item Name="Draw Arc.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Arc.vi"/>
-				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
-				<Item Name="lveventtype.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/lveventtype.ctl"/>
-				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
-				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
-				<Item Name="Draw Text at Point.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Text at Point.vi"/>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="Draw Text in Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Text in Rect.vi"/>
-				<Item Name="PCT Pad String.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/PCT Pad String.vi"/>
-				<Item Name="Draw Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Rectangle.vi"/>
-				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
-				<Item Name="LabVIEW Icon API.lvlib" Type="Library" URL="/&lt;vilib&gt;/LabVIEW Icon API/LabVIEW Icon API.lvlib"/>
-				<Item Name="Picture to Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Picture to Pixmap.vi"/>
-				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
-				<Item Name="Icon.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Icon/Icon.lvclass"/>
-				<Item Name="Layer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Layer/Layer.lvclass"/>
-				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
-				<Item Name="Layer.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/Layer.ctl"/>
-				<Item Name="LayerType.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/LayerType.ctl"/>
-				<Item Name="lv_icon.lvlib" Type="Library" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/lv_icon.lvlib"/>
-				<Item Name="Icon Framework.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Icon Framework/Icon Framework.lvclass"/>
-				<Item Name="Font.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/Font.ctl"/>
-				<Item Name="BodyText.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/BodyText.ctl"/>
-				<Item Name="Alignment.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/Alignment.ctl"/>
-				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
-				<Item Name="Draw Unflattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Unflattened Pixmap.vi"/>
-				<Item Name="Draw True-Color Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw True-Color Pixmap.vi"/>
-				<Item Name="Flatten Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pixmap.llb/Flatten Pixmap.vi"/>
-				<Item Name="Draw 4-Bit Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw 4-Bit Pixmap.vi"/>
-				<Item Name="Draw 8-Bit Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw 8-Bit Pixmap.vi"/>
-				<Item Name="Draw 1-Bit Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw 1-Bit Pixmap.vi"/>
-				<Item Name="Graphic.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/Graphic.ctl"/>
-				<Item Name="BodyTextPosition.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/BodyTextPosition.ctl"/>
-				<Item Name="IEColor.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/IEColor.ctl"/>
-				<Item Name="Create Mask.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Create Mask.vi"/>
-				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
-				<Item Name="Draw Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Rect.vi"/>
-				<Item Name="LabVIEW Icon Stored Information.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Controls/LabVIEW Icon Stored Information.ctl"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="Load &amp; Unload.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Icon API/lv_icon/Classes/Load_Unload/Load &amp; Unload.lvclass"/>
-				<Item Name="Get Image Subset.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Get Image Subset.vi"/>
-				<Item Name="Coerce Bad Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Coerce Bad Rect.vi"/>
-				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
-				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
-				<Item Name="IMAQ ColorImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ColorImageToArray"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
-				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
-				<Item Name="Draw Multiple Lines.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Multiple Lines.vi"/>
-				<Item Name="NI_AAL_Geometry.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Geometry.lvlib"/>
-				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
-				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
-				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
-				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
-				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
-				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
-				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
-				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
-				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
-				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
-				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
-				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
-				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
-				<Item Name="NI_Kinematics.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Kinematics/NI_Kinematics.lvlib"/>
-				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
-				<Item Name="Draw Oval.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Oval.vi"/>
-				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="CTRE_LibraryCall_ErrorHandle.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Error/CTRE_LibraryCall_ErrorHandle.vi"/>
@@ -572,8 +511,6 @@ AddOutputFilter chunkFilter
 				<Item Name="CTRE_PigeonIMU_Open_TalonSRX.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Pigeon IMU/CTRE_PigeonIMU_Open_TalonSRX.vi"/>
 				<Item Name="CTRE_PigeonIMU_Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Pigeon IMU/CTRE_PigeonIMU_Open.vi"/>
 				<Item Name="CTRE_PigeonIMU_RefNumRegistrySet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Pigeon IMU/CTRE_PigeonIMU_RefNumRegistrySet.vi"/>
-				<Item Name="CTRE_Phoenix_CANcoder_Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/CANCoder/CTRE_Phoenix_CANcoder_Open.vi"/>
-				<Item Name="LVMouseTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMouseTypeDef.ctl"/>
 				<Item Name="roboRIO_FPGA_2022_22.2.0.lvbitx" Type="Document" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/roboRIO_FPGA_2022_22.2.0.lvbitx"/>
 				<Item Name="WPI_SPIMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIMode.ctl"/>
 				<Item Name="FPGA_CounterEncoderSourceConvertionLVSourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/CounterEncoderSourceConvertion/FPGA_CounterEncoderSourceConvertionLVSourceType.ctl"/>
@@ -632,7 +569,6 @@ AddOutputFilter chunkFilter
 				<Item Name="FPGA_CounterEncoderSourceConvertionLVSourceTypeToFPGAType.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/CounterEncoderSourceConvertion/FPGA_CounterEncoderSourceConvertionLVSourceTypeToFPGAType.vi"/>
 				<Item Name="FPGA_ERRInvalidAnalogTriggerChannel.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AnalogTrigger/FPGA_ERRInvalidAnalogTriggerChannel.vi"/>
 				<Item Name="FPGA_SPI_ReadAuto.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/SPI/FPGA_SPI_ReadAuto.vi"/>
-				<Item Name="Assert Array Dimension Count.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Array Dimension Count.vim"/>
 				<Item Name="Assert Real Numeric Or Waveform Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Real Numeric Or Waveform Type.vim"/>
 				<Item Name="CTRE_Phoenix_MotorControl_ConfigTrajectoryPointDuration.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Closed Loop/Motion Profile/CTRE_Phoenix_MotorControl_ConfigTrajectoryPointDuration.vi"/>
 				<Item Name="CTRE_Phoenix_MotorControl_BufferedTrajectoryPointStream_DeviceRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_BufferedTrajectoryPointStream_DeviceRef.ctl"/>
@@ -644,184 +580,6 @@ AddOutputFilter chunkFilter
 				<Item Name="CTRE_Phoenix_MotorControl_BufferedTrajectoryPointStream_Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Closed Loop/Motion Profile/CTRE_Phoenix_MotorControl_BufferedTrajectoryPointStream_Open.vi"/>
 				<Item Name="CTRE_Phoenix_MotorControl_MotionProfileControlMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_MotionProfileControlMode.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_StartMotionProfile.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Closed Loop/Motion Profile/CTRE_Phoenix_MotorControl_StartMotionProfile.vi"/>
-				<Item Name="Read BMP File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Read BMP File.vi"/>
-				<Item Name="Read BMP File Data.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Read BMP File Data.vi"/>
-				<Item Name="Read BMP Header Info.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Read BMP Header Info.vi"/>
-				<Item Name="Calc Long Word Padded Width.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Calc Long Word Padded Width.vi"/>
-				<Item Name="Flip and Pad for Picture Control.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Flip and Pad for Picture Control.vi"/>
-				<Item Name="3D Plot.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/3D Plot/3D Plot.lvclass"/>
-				<Item Name="3DMathPlot Ctrl Act Queue.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Queue.ctl"/>
-				<Item Name="3DMathPlot Ctrl Act Cluster.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Cluster.ctl"/>
-				<Item Name="3DMathPlot State Class.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot State Class.ctl"/>
-				<Item Name="NI_3D Picture Control.lvlib" Type="Library" URL="/&lt;vilib&gt;/picture/3D Picture Control/NI_3D Picture Control.lvlib"/>
-				<Item Name="NI_Math Plot Private Lib.lvlib" Type="Library" URL="/&lt;vilib&gt;/Math Plots/Plot Private Lib/NI_Math Plot Private Lib.lvlib"/>
-				<Item Name="3D Plot Datatype.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/3D Plot Datatype/3D Plot Datatype.lvclass"/>
-				<Item Name="LV3DPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LV3DPointTypeDef.ctl"/>
-				<Item Name="LVSceneTextAlignment.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVSceneTextAlignment.ctl"/>
-				<Item Name="cd_Convert Matrix to Table for Render.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Control Design/_Utility/Rendering.llb/cd_Convert Matrix to Table for Render.vi"/>
-				<Item Name="CD Define Font for Rendering.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Control Design/_Utility/Rendering.llb/CD Define Font for Rendering.vi"/>
-				<Item Name="CD Calculate Size and Origin for Matrix.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Control Design/_Utility/Rendering.llb/CD Calculate Size and Origin for Matrix.vi"/>
-				<Item Name="CD Render 2D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Control Design/_Utility/Rendering.llb/CD Render 2D String Array.vi"/>
-				<Item Name="cd_Create Nyquist Arrows.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Control Design/_Utility/Plots.llb/Plots subVIs/cd_Create Nyquist Arrows.vi"/>
-				<Item Name="cd_Evaluate Symbolic Matrix.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Control Design/_Model Construction/Model Creation.llb/Model Creation SubVI/cd_Evaluate Symbolic Matrix.vi"/>
-				<Item Name="NI_Robotics Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Utilities/NI_Robotics Utilities.lvlib"/>
-				<Item Name="XY Plot Type.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/XY Plot Type.ctl"/>
-				<Item Name="Plot XY.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn.llb/Plot XY.vi"/>
-				<Item Name="Autoscale XY.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn.llb/Autoscale XY.vi"/>
-				<Item Name="Autoscale Multi-XY.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn.llb/Autoscale Multi-XY.vi"/>
-				<Item Name="Validate Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Validate Rectangle.vi"/>
-				<Item Name="Draw Cartesian Axes.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn.llb/Draw Cartesian Axes.vi"/>
-				<Item Name="Calc Axis Attributes.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Calc Axis Attributes.vi"/>
-				<Item Name="Calc Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Calc Text Rect.vi"/>
-				<Item Name="Num To Text.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Num To Text.vi"/>
-				<Item Name="Calc Inner Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Calc Inner Rect.vi"/>
-				<Item Name="Calc Scale Factors.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Calc Scale Factors.vi"/>
-				<Item Name="Map Setup.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Map Setup.vi"/>
-				<Item Name="Draw Axes.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Draw Axes.vi"/>
-				<Item Name="Calc Scale Specs.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Calc Scale Specs.vi"/>
-				<Item Name="Calc Increment.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Calc Increment.vi"/>
-				<Item Name="Increment Filter.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Increment Filter.vi"/>
-				<Item Name="Map Value to Pixel.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Map Value to Pixel.vi"/>
-				<Item Name="Filter Zero Label.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Filter Zero Label.vi"/>
-				<Item Name="Draw Scale.vi" Type="VI" URL="/&lt;vilib&gt;/picture/scale.llb/Draw Scale.vi"/>
-				<Item Name="Move Pen.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Move Pen.vi"/>
-				<Item Name="Draw Line.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Line.vi"/>
-				<Item Name="Draw Grid.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Draw Grid.vi"/>
-				<Item Name="Draw XY Data.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn.llb/Draw XY Data.vi"/>
-				<Item Name="Scale XY Data.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Scale XY Data.vi"/>
-				<Item Name="Draw Point.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Point.vi"/>
-				<Item Name="Count Data Points.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Count Data Points.vi"/>
-				<Item Name="Draw Sized Squares.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Draw Sized Squares.vi"/>
-				<Item Name="Min Max X.vi" Type="VI" URL="/&lt;vilib&gt;/picture/cartesn2.llb/Min Max X.vi"/>
-				<Item Name="NIMS_Finalize Error.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Finalize Error.vi"/>
-				<Item Name="NIMS_NodeEndStatement_Output.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/NodeEndStatement/NIMS_NodeEndStatement_Output.vi"/>
-				<Item Name="NIMS_inv(GM).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/BuiltInFunctions/inv/NIMS_inv(GM).vi"/>
-				<Item Name="NIMS_Error From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ErrorHandling/NIMS_Error From Error Code.vi"/>
-				<Item Name="NIMS_ArithmeticOperator_multmx(M,CV).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/ArithmeticOperatorToken/NIMS_ArithmeticOperator_multmx(M,CV).vi"/>
-				<Item Name="Create Error.vi" Type="VI" URL="/&lt;vilib&gt;/imathl/engines/lvmath/Functions/Error Handling/Create Error.vi"/>
-				<Item Name="UID Generator.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/WorkSpace/UID Generator.vi"/>
-				<Item Name="Clear UID.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/Managers/SymbolTable/Clear UID.vi"/>
-				<Item Name="NIMS_RunTimeType_From StrictType (excl LVString).vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/RunTimeType/NIMS_RunTimeType_From StrictType (excl LVString).vi"/>
-				<Item Name="MC_LocalVariableDefStatement_Display.vi" Type="VI" URL="/&lt;vilib&gt;/imath/engines/lvmath2/RunTimeEngine/LocalVariableDefStatement/MC_LocalVariableDefStatement_Display.vi"/>
-				<Item Name="NILVSim.dll" Type="Document" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim.dll"/>
-				<Item Name="SimParams.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Companion Diagram/SimConfigNode/SimParams.ctl"/>
-				<Item Name="_simSolvers.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Companion Diagram/SimConfigNode/_simSolvers.ctl"/>
-				<Item Name="SIMPH Param Control Actions.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH Param Control Actions.ctl"/>
-				<Item Name="NILVSim_ParamChanged.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_ParamChanged.vi"/>
-				<Item Name="NILVSIM_BeginStep.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSIM_BeginStep.vi"/>
-				<Item Name="SIM Saturation (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Nonlinear/Implementation/NILVSim Saturation.llb/SIM Saturation (scalar).vi"/>
-				<Item Name="SIM Gain (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/SignalArithmetic/Implementation/NILVSim Gain.llb/SIM Gain (scalar).vi"/>
-				<Item Name="NILVSim_Manager.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_Manager.vi"/>
-				<Item Name="NILVSim_FinalizeModel.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_FinalizeModel.vi"/>
-				<Item Name="SIMPH Global Control Actions.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH Global Control Actions.ctl"/>
-				<Item Name="SIMPH Root Simulation Hierarchy.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/HierarchySupport/SIMPH Root Simulation Hierarchy.ctl"/>
-				<Item Name="SIMPH Root Simulation Header.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/HierarchySupport/SIMPH Root Simulation Header.ctl"/>
-				<Item Name="SIMPH Root Simulation Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/HierarchySupport/SIMPH Root Simulation Type.ctl"/>
-				<Item Name="SIMPH System.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH System.ctl"/>
-				<Item Name="SIMPH Block.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH Block.ctl"/>
-				<Item Name="SIMPH Param Source.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH Param Source.ctl"/>
-				<Item Name="SIMPH_Dot_Path_To_Path_Array.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/PathSupport/SIMPH_Dot_Path_To_Path_Array.vi"/>
-				<Item Name="SIMPH Block Path to Cluster Path.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/PathSupport/SIMPH Block Path to Cluster Path.vi"/>
-				<Item Name="SIMPH Read Cluster Element Value.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/SIMPH Read Cluster Element Value.vi"/>
-				<Item Name="SIMPH Write Cluster Element Value.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/SIMPH Write Cluster Element Value.vi"/>
-				<Item Name="SIMPH Get Root Simulation Info.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/HierarchySupport/SIMPH Get Root Simulation Info.vi"/>
-				<Item Name="SIMPH_Path_Array_To_Dot_Path.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/PathSupport/SIMPH_Path_Array_To_Dot_Path.vi"/>
-				<Item Name="NILVSim Get Time and IsAcceptedStep.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/NILVSim Get Time and IsAcceptedStep.vi"/>
-				<Item Name="SIM Trim or Lin Param.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Model Trim and Linearize/SIM Lin Trim Shared.llb/SIM Trim or Lin Param.ctl"/>
-				<Item Name="SIM Unbundle Sim Info.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Unbundle Sim Info.vi"/>
-				<Item Name="NILVSim_GetModelError.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetModelError.vi"/>
-				<Item Name="SIM SimErrorHandler.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM SimErrorHandler.vi"/>
-				<Item Name="SIM Bundle Sim Info.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Bundle Sim Info.vi"/>
-				<Item Name="SIMSH Read Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIMSH Read Queue.vi"/>
-				<Item Name="NILVSim_Initialize.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_Initialize.vi"/>
-				<Item Name="SIM limit type.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM limit type.ctl"/>
-				<Item Name="SIM Integrator Distributor (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator Distributor (vector).vi"/>
-				<Item Name="SIM Integrator Collector (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator Collector (vector).vi"/>
-				<Item Name="SIM Integrator (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator (vector).vi"/>
-				<Item Name="SIM subVI tag data.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Editor Utilities/SIM subVI tag data.ctl"/>
-				<Item Name="SIM subVI execution type.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Editor Utilities/SIM subVI execution type.ctl"/>
-				<Item Name="SIM Time.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/SIM Time.vi"/>
-				<Item Name="SIM Halt.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/SIM Halt.vi"/>
-				<Item Name="SIM Collector (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/NILVSim Collector.llb/SIM Collector (vector).vi"/>
-				<Item Name="SIM Fire Discrete SubVI.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Fire Discrete SubVI.vi"/>
-				<Item Name="NILVSim Collector core (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/NILVSim Collector.llb/NILVSim Collector core (vector).vi"/>
-				<Item Name="SIM Fire Discrete SubVI (Core).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Fire Discrete SubVI (Core).vi"/>
-				<Item Name="NILVSim_FinishedLate.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_FinishedLate.vi"/>
-				<Item Name="SIM RateLimiter (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Nonlinear/Implementation/NILVSim RateLimiter.llb/SIM RateLimiter (scalar).vi"/>
-				<Item Name="SIM LUT 1D (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/LookUpTables/Implementation/NILVSim LUT 1D.llb/SIM LUT 1D (scalar).vi"/>
-				<Item Name="SIM Time Waveform (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/SignalDisplay/Implementation/NILVSim Time Waveform.llb/SIM Time Waveform (scalar).vi"/>
-				<Item Name="SIM Buffer XY Graph (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/SignalDisplay/Implementation/NILVSim Buffer XY Graph.llb/SIM Buffer XY Graph (scalar).vi"/>
-				<Item Name="NILVSim Buffer XY Graph (core).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/SignalDisplay/Implementation/NILVSim Buffer XY Graph.llb/NILVSim Buffer XY Graph (core).vi"/>
-				<Item Name="SIM manage modulo counter.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM manage modulo counter.vi"/>
-				<Item Name="SIM CircBuf remove oldest.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Circular Buffer.llb/SIM CircBuf remove oldest.vi"/>
-				<Item Name="SIM circular buffer insert.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Circular Buffer.llb/SIM circular buffer insert.vi"/>
-				<Item Name="SIM circular buffer create.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Circular Buffer.llb/SIM circular buffer create.vi"/>
-				<Item Name="SIM circular buffer ordered array.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Circular Buffer.llb/SIM circular buffer ordered array.vi"/>
-				<Item Name="SIM Collector (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/NILVSim Collector.llb/SIM Collector (scalar).vi"/>
-				<Item Name="SIM Is Init or Final Stage.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Is Init or Final Stage.vi"/>
-				<Item Name="NILVSim Collector core (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/NILVSim Collector.llb/NILVSim Collector core (scalar).vi"/>
-				<Item Name="SIM Sine Wave (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/DataSources/Implementation/NILVSim Sine Wave.llb/SIM Sine Wave (scalar).vi"/>
-				<Item Name="SIM Ramp (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/DataSources/Implementation/NILVSim Ramp.llb/SIM Ramp (scalar).vi"/>
-				<Item Name="SIM Gain (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/SignalArithmetic/Implementation/NILVSim Gain.llb/SIM Gain (vector).vi"/>
-				<Item Name="NI_Robotics_Serial Robot Arm.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Kinematics/Robot/NI_Robotics_Serial Robot Arm.lvclass"/>
-				<Item Name="NI_Robotics_Link.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Kinematics/Link/NI_Robotics_Link.lvclass"/>
-				<Item Name="NI_Robotics_3DKinematics.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Kinematics/Plotting/NI_Robotics_3DKinematics.lvlib"/>
-				<Item Name="DH Kinematic Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/robotics/Kinematics/DH Kinematic Parameters.ctl"/>
-				<Item Name="DH Dynamic Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/robotics/Kinematics/DH Dynamic Parameters.ctl"/>
-				<Item Name="NI_AngleManipulation.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/AngleManip/NI_AngleManipulation.lvlib"/>
-				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
-				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
-				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
-				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
-				<Item Name="Read Characters From File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Characters From File.vi"/>
-				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
-				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
-				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
-				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
-				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
-				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
-				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
-				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
-				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
-				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
-				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
-				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
-				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
-				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
-				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
-				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
-				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
-				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
-				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
-				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
-				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
-				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
-				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
-				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
-				<Item Name="NI_Robotics_AnalyticKinematics.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Kinematics/Analytical/NI_Robotics_AnalyticKinematics.lvlib"/>
-				<Item Name="NI_Robotics_SCARA Serial Arm Class.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Kinematics/Analytical/SCARA/NI_Robotics_SCARA Serial Arm Class.lvclass"/>
-				<Item Name="NI_Robotics_Analytical Serial Arm Class.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Kinematics/Analytical/Generic/NI_Robotics_Analytical Serial Arm Class.lvclass"/>
-				<Item Name="NI_Robotics_AbstractDstarNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractDstarNode/NI_Robotics_AbstractDstarNode.lvclass"/>
-				<Item Name="NI_Robotics_AbstractMapNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractMapNode/NI_Robotics_AbstractMapNode.lvclass"/>
-				<Item Name="NI_Robotics_AbstractAstarNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractAstarNode/NI_Robotics_AbstractAstarNode.lvclass"/>
-				<Item Name="NI_Robotics_Priority Queue.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/Priority Queue/NI_Robotics_Priority Queue.lvclass"/>
-				<Item Name="NI_Robotics_InconsistentList.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/InconsistentList/NI_Robotics_InconsistentList.lvclass"/>
-				<Item Name="NI_Robotics_OccupancyGridWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/OccupancyGridWorldMap/NI_Robotics_OccupancyGridWorldMap.lvclass"/>
-				<Item Name="NI_Robotics_OccupancyGridMapNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/OccupancyGridNode/NI_Robotics_OccupancyGridMapNode.lvclass"/>
-				<Item Name="NI_Robotics_AbstractWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractWorldMap/NI_Robotics_AbstractWorldMap.lvclass"/>
-				<Item Name="NI_Robotics_AbstractDstarWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractDstarWorldMap/NI_Robotics_AbstractDstarWorldMap.lvclass"/>
-				<Item Name="NI_Robotics_Navigation .lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Navigation/NI_Robotics_Navigation .lvlib"/>
-				<Item Name="NI_Robotics_AnytimeDStar.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/Anytime D Star/NI_Robotics_AnytimeDStar.lvclass"/>
-				<Item Name="NI_Robotics_6R Type 1 Serial Arm Class.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Kinematics/Analytical/6R/Type 1/NI_Robotics_6R Type 1 Serial Arm Class.lvclass"/>
-				<Item Name="NI_Robotics_6R Type 3 Serial Arm Class.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Kinematics/Analytical/6R/Type 3/NI_Robotics_6R Type 3 Serial Arm Class.lvclass"/>
-				<Item Name="NI_Robotics_6R Type 2 Serial Arm Class.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Kinematics/Analytical/6R/Type 2/NI_Robotics_6R Type 2 Serial Arm Class.lvclass"/>
-				<Item Name="NI_Robotics_5R Type 1 Serial Arm Class.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Kinematics/Analytical/5R/Type 1/NI_Robotics_5R Type 1 Serial Arm Class.lvclass"/>
 				<Item Name="WPI_JoystickMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickMapping.vi"/>
 				<Item Name="WPI_JoystickArcadeMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickArcadeMapping.vi"/>
 				<Item Name="WPI_JoystickButtonSpinMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickButtonSpinMapping.vi"/>
@@ -901,21 +659,31 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Draw Tangent Line.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Drawing/Draw Tangent Line.vi"/>
-			<Item Name="Draw Tangent Circle.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Drawing/Draw Tangent Circle.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="scaleFactor.vi" Type="VI" URL="../Support Code/submodules/swerve/src/scaleFactor.vi"/>
-			<Item Name="TicksToDegrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/TicksToDegrees.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="libsystem_kernel.dylib" Type="Document" URL="/usr/lib/system/libsystem_kernel.dylib"/>
-			<Item Name="cdex - update quadcopter 3D model.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/Control and Simulation/Case Studies/Aerospace/Quadcopter/subVIs/cdex - update quadcopter 3D model.vi"/>
-			<Item Name="rvc Create Grid.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Reference/LabVIEW Corke Toolkit/Functions/Position and Orientation/subVIs/rvc Create Grid.vi"/>
-			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="/Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
+			<Item Name="Open CANCoders.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Open CANCoders.vi"/>
+			<Item Name="Inverse Kinematics.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Inverse Kinematics.vi"/>
+			<Item Name="Degrees To Ticks.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Degrees To Ticks.vi"/>
+			<Item Name="Single Cmd Info.ctl" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Types/Single Cmd Info.ctl"/>
+			<Item Name="Trajectory Data.ctl" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Types/Trajectory Data.ctl"/>
+			<Item Name="Segment Type.ctl" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Types/Segment Type.ctl"/>
+			<Item Name="Overrides.ctl" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Types/Overrides.ctl"/>
+			<Item Name="Angluar Limits.ctl" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Types/Angluar Limits.ctl"/>
+			<Item Name="Drive Type.ctl" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Types/Drive Type.ctl"/>
+			<Item Name="Path Type.ctl" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Types/Path Type.ctl"/>
+			<Item Name="numlock.ctl" Type="VI" URL="../Support Code/submodules/numlock/src/numlock.ctl"/>
+			<Item Name="Velocity Conversion.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Velocity Conversion.vi"/>
+			<Item Name="Ticks To Degrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Ticks To Degrees.vi"/>
+			<Item Name="Angle Wrapper.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Angle Wrapper.vi"/>
+			<Item Name="numlock write.vim" Type="VI" URL="../Support Code/submodules/numlock/src/numlock write.vim"/>
+			<Item Name="numlock init.vi" Type="VI" URL="../Support Code/submodules/numlock/src/numlock init.vi"/>
+			<Item Name="numlock close.vi" Type="VI" URL="../Support Code/submodules/numlock/src/numlock close.vi"/>
+			<Item Name="Versioned Load.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/FileIO/Versioned Load.vi"/>
+			<Item Name="Field To Robot Centric.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Field To Robot Centric.vi"/>
+			<Item Name="numlock flush.vi" Type="VI" URL="../Support Code/submodules/numlock/src/numlock flush.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

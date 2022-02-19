@@ -913,10 +913,14 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="libsystem_kernel.dylib" Type="Document" URL="/usr/lib/system/libsystem_kernel.dylib"/>
-			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="/Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
 			<Item Name="cdex - update quadcopter 3D model.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/Control and Simulation/Case Studies/Aerospace/Quadcopter/subVIs/cdex - update quadcopter 3D model.vi"/>
 			<Item Name="rvc Create Grid.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Reference/LabVIEW Corke Toolkit/Functions/Position and Orientation/subVIs/rvc Create Grid.vi"/>
 			<Item Name="Shooter Immediate.vit" Type="VI" URL="../../test-project/Shooter/Commands/Shooter Immediate.vit"/>
+			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
+			<Item Name="Shooter Setpoints.ctl" Type="VI" URL="../../test-project/Shooter/Implementation/Shooter Setpoints.ctl"/>
+			<Item Name="Shooter Operations.ctl" Type="VI" URL="../../test-project/Shooter/Implementation/Shooter Operations.ctl"/>
+			<Item Name="Shooter Command Helper.vi" Type="VI" URL="../../test-project/Shooter/Implementation/Infrastructure/Shooter Command Helper.vi"/>
+			<Item Name="Shooter Published Globals.vi" Type="VI" URL="../../test-project/Shooter/Implementation/Shooter Published Globals.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

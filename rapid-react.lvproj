@@ -145,6 +145,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 		<Item Name="Autonomous.vi" Type="VI" URL="../Autonomous.vi"/>
 		<Item Name="SubSystems.vi" Type="VI" URL="../SubSystems.vi"/>
+		<Item Name="Temp Transfer Telelop.vi" Type="VI" URL="../../rapid-react 2687/Support Code/Teleop/Temp Transfer Telelop.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Command Status Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Command Status Info.ctl"/>

@@ -16,6 +16,7 @@
 		<Item Name="Local" Type="Folder" URL="../Local">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Shooter Ready.vi" Type="VI" URL="../Shooter/Sub-VI/Shooter Ready.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Initialize Joystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Initialize Joystick.vi"/>
@@ -811,7 +812,6 @@ AddOutputFilter chunkFilter
 			<Item Name="TicksToDegrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/TicksToDegrees.vi"/>
 			<Item Name="scaleFactor.vi" Type="VI" URL="../Support Code/submodules/swerve/src/scaleFactor.vi"/>
 			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
-			<Item Name="Shooter Ready.vi" Type="VI" URL="../../../rapid-react/Support Code/Teleop/Shooter Ready.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

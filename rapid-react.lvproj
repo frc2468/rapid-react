@@ -17,6 +17,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Shooter Ready.vi" Type="VI" URL="../Shooter/Sub-VI/Shooter Ready.vi"/>
+		<Item Name="Inverse Kinematics Test.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Inverse Kinematics Test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Initialize Joystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Initialize Joystick.vi"/>
@@ -25,8 +26,26 @@
 				<Item Name="joystickAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/joystickAcquire.vi"/>
 				<Item Name="keyboardAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/keyboardAcquire.vi"/>
 				<Item Name="mouseAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/mouseAcquire.vi"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
+				<Item Name="LVMouseTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMouseTypeDef.ctl"/>
+				<Item Name="Draw Oval.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Oval.vi"/>
+				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
 			</Item>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
+			<Item Name="Inverse Kinematics.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Inverse Kinematics.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="PseudoInverse Calculator.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/PseudoInverse Calculator.vi"/>
+			<Item Name="Substitution.vi" Type="VI" URL="../Support Code/submodules/swerve/src/Substitution.vi"/>
+			<Item Name="Create Box.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Create Box.vi"/>
+			<Item Name="Pod Drawing Utility.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Pod Drawing Utility.vi"/>
+			<Item Name="Arrow Drawing Utility.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Arrow Drawing Utility.vi"/>
+			<Item Name="Draw Arrow.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Draw Arrow.vi"/>
+			<Item Name="Draw Joystick.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Draw Joystick.vi"/>
+			<Item Name="Inverse Kinematics Trajectory Visualizer.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Inverse Kinematics Trajectory Visualizer.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -805,6 +824,7 @@ AddOutputFilter chunkFilter
 			<Item Name="TicksToDegrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/TicksToDegrees.vi"/>
 			<Item Name="scaleFactor.vi" Type="VI" URL="../Support Code/submodules/swerve/src/scaleFactor.vi"/>
 			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
+			<Item Name="Pt Dist.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Trajectory/Bezier/sub-vi/Pt Dist.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -823,7 +843,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2136F65-FD06-4AC9-A317-10E44B9EF7A4}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">21</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -867,7 +887,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{644948F5-5E9F-497B-927E-A9EAF1ED4434}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin/Paths</Property>
-				<Property Name="Bld_version.build" Type="Int">88</Property>
+				<Property Name="Bld_version.build" Type="Int">95</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/Paths</Property>

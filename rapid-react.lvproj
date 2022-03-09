@@ -18,6 +18,7 @@
 		</Item>
 		<Item Name="Shooter Ready.vi" Type="VI" URL="../Shooter/Sub-VI/Shooter Ready.vi"/>
 		<Item Name="Inverse Kinematics Test.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Inverse Kinematics Test.vi"/>
+		<Item Name="Shooting Table.vi" Type="VI" URL="../Shooter/Sub-VI/Shooting Table.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Initialize Joystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Initialize Joystick.vi"/>
@@ -46,6 +47,7 @@
 			<Item Name="Draw Arrow.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Draw Arrow.vi"/>
 			<Item Name="Draw Joystick.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Draw Joystick.vi"/>
 			<Item Name="Inverse Kinematics Trajectory Visualizer.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Inverse Kinematics Trajectory Visualizer.vi"/>
+			<Item Name="Chebfit.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Trajectory/Bezier/Cheby/Chebfit.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

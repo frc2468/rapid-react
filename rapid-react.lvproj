@@ -841,7 +841,6 @@ AddOutputFilter chunkFilter
 			<Item Name="TicksToDegrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/TicksToDegrees.vi"/>
 			<Item Name="scaleFactor.vi" Type="VI" URL="../Support Code/submodules/swerve/src/scaleFactor.vi"/>
 			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
-			<Item Name="Pt Dist.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Trajectory/Bezier/sub-vi/Pt Dist.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

@@ -50,6 +50,7 @@
 			<Item Name="Inverse Kinematics Trajectory Visualizer.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Inverse Kinematics Trajectory Visualizer.vi"/>
 			<Item Name="Chebfit.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Trajectory/Bezier/Cheby/Chebfit.vi"/>
 			<Item Name="Chebeval.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Trajectory/Bezier/Cheby/Chebeval.vi"/>
+			<Item Name="Shooting Mode.ctl" Type="VI" URL="../Shooter/Sub-VI/Shooting Mode.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

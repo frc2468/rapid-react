@@ -19,6 +19,7 @@
 		<Item Name="Shooter Ready.vi" Type="VI" URL="../Shooter/Sub-VI/Shooter Ready.vi"/>
 		<Item Name="Inverse Kinematics Test.vi" Type="VI" URL="../Support Code/submodules/swerve/test/Inverse Kinematics Test/Inverse Kinematics Test.vi"/>
 		<Item Name="Get Shooting Values.vi" Type="VI" URL="../Shooter/Sub-VI/Get Shooting Values.vi"/>
+		<Item Name="Acc Limit.vi" Type="VI" URL="../Drive/Sub-VI/Acc Limit.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Initialize Joystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Initialize Joystick.vi"/>
@@ -51,12 +52,14 @@
 			<Item Name="Chebfit.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Trajectory/Bezier/Cheby/Chebfit.vi"/>
 			<Item Name="Chebeval.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Trajectory/Bezier/Cheby/Chebeval.vi"/>
 			<Item Name="Shooting Mode.ctl" Type="VI" URL="../Shooter/Sub-VI/Shooting Mode.ctl"/>
+			<Item Name="Point Distance.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Util/Point Distance.vi"/>
+			<Item Name="Normalize Point.vi" Type="VI" URL="../Support Code/submodules/bordeaux-pathinator/Bordeaux/Util/Normalize Point.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">Target</Property>
-		<Property Name="alias.value" Type="Str">10.26.87.2</Property>
+		<Property Name="alias.value" Type="Str">10.24.68.2</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,7AAE;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">7AAE</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>

@@ -59,7 +59,7 @@
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">Target</Property>
-		<Property Name="alias.value" Type="Str">10.26.87.2</Property>
+		<Property Name="alias.value" Type="Str">10.24.68.2</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,7AAE;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">7AAE</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -902,7 +902,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2136F65-FD06-4AC9-A317-10E44B9EF7A4}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">28</Property>
+				<Property Name="Bld_version.build" Type="Int">31</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>

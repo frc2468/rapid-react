@@ -59,7 +59,7 @@
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">Target</Property>
-		<Property Name="alias.value" Type="Str">10.24.68.2</Property>
+		<Property Name="alias.value" Type="Str">10.26.87.2</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,7AAE;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">7AAE</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -885,13 +885,6 @@ AddOutputFilter chunkFilter
 			<Item Name="TicksToDegrees.vi" Type="VI" URL="../Support Code/submodules/swerve/src/TicksToDegrees.vi"/>
 			<Item Name="scaleFactor.vi" Type="VI" URL="../Support Code/submodules/swerve/src/scaleFactor.vi"/>
 			<Item Name="Draw Joystick Axes.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/FRC/roboRIO/Robot and Motor/Arcade Joystick Mapping/Draw Joystick Axes.vi"/>
-			<Item Name="Path Type.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Path Type.ctl"/>
-			<Item Name="Drive Type.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Drive Type.ctl"/>
-			<Item Name="Angluar Limits.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Angluar Limits.ctl"/>
-			<Item Name="Overrides.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Overrides.ctl"/>
-			<Item Name="Segment Type.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Segment Type.ctl"/>
-			<Item Name="Trajectory Data.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Trajectory Data.ctl"/>
-			<Item Name="Single Cmd Info.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Single Cmd Info.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -954,7 +947,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{644948F5-5E9F-497B-927E-A9EAF1ED4434}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin/Paths</Property>
-				<Property Name="Bld_version.build" Type="Int">121</Property>
+				<Property Name="Bld_version.build" Type="Int">166</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/Paths</Property>

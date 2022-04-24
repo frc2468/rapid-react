@@ -6,10 +6,3 @@
 	path = Support Code/submodules/bordeaux-pathinator
 	url = https://eisd-robotics.eanesisd.net/2468/bordeaux-pathinator
 	branch = dev
-[submodule "numlock"]
-	path = Support Code/submodules/numlock
-	url = https://eisd-robotics.eanesisd.net/cflew/numlock
-	branch = dev
-[submodule "Support Code/submodules/cd-and-brick"]
-	path = Support Code/submodules/cd-and-brick
-	url = https://eisd-robotics.eanesisd.net/2468/cd-and-brick
